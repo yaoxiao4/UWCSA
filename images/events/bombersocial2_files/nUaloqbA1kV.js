@@ -1,0 +1,5 @@
+/*!CK:2764164679!*//*1414377720,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["Ii38u"]); }
+
+__d("ChatTabComposerDataSource",["MercuryConstants","DataSource"],function(a,b,c,d,e,f,g,h){for(var i in h)if(h.hasOwnProperty(i))k[i]=h[i];var j=h===null?null:h.prototype;k.prototype=Object.create(j);k.prototype.constructor=k;k.__superConstructor__=h;function k(l){"use strict";l=l||{};l.kanaNormalization=true;h.call(this,l);this._showThreads=true;}k.prototype.buildData=function(l){"use strict";var m=[];l.forEach(function(n){var o=j.getEntry.call(this,n);if(o.render_type==g.MercuryTypeaheadConstants.THREAD_TYPE){if(this._showThreads)m.push(n);}else m.push(n);},this);return j.buildData.call(this,m);};k.prototype.setShowThreads=function(l){"use strict";this._showThreads=l;};e.exports=k;},null);

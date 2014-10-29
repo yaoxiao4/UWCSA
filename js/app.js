@@ -10,6 +10,7 @@ csaapp.config(['$routeProvider',
       		}).
       when('/events/', {
    			templateUrl: 'templates/events.html',
+        controller:'eventCtrl'
       		 	//controller: 'PhoneDetailCtrl'
     		}).
       when('/join/', {
@@ -19,13 +20,9 @@ csaapp.config(['$routeProvider',
       when('/contact/', {
        	templateUrl: 'templates/contact.html',
        		 	//controller: 'PhoneDetailCtrl'
-      }).
-      when('/', {
-        templateUrl: 'templates/home.html',
-            controller: 'navCtrl'
-      }).      
+      }).    
       otherwise({
-        	redirectTo: '/'
+        	redirectTo: '/events'
       });
 
 	}]);
@@ -76,4 +73,11 @@ csaapp.controller('navCtrl', ['$scope', '$location', '$route', function($scope,$
 
     }
 
+}]);
+
+csaapp.controller('eventCtrl', ['$scope', '$location', '$route', function($scope,$location,$route) {
+    $scope.toEvent = function(link){
+
+      window.open(link,'_blank');
+    }
 }]);

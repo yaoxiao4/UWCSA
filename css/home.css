@@ -16,6 +16,158 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
-#mainContainer, #topbanner {
-    border-radius: 25px 25px 0px 0px;
+
+
+/* CONTENT MANAGEMENT */
+.figure {
+    -webkit-filter: grayscale(50%);
+    overflow: hidden;
+    position: relative;
 }
+
+.figure:hover{
+  -webkit-filter: grayscale(0%);
+}
+
+.figcaption {
+	width:100%;
+    background-color: rgba(218,41,28,0.9);
+    position: absolute;
+    top: 228px;
+    font-family: 'DINWebPro-Medium',Arial,sans-serif;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    min-height:104px;
+
+}
+
+.figcaption h6{
+
+    text-transform: uppercase;
+}
+
+.figcaption-small {
+
+    background-color: #3399FF;
+    position: absolute;
+    top: 95px;
+    font-family: 'DINWebPro-Medium',Arial,sans-serif;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    font-size: 12px;
+    min-height:100px;
+}
+
+.figcaption-small h6{
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.figure:hover .figcaption-small {
+  bottom: 0;
+  top: 50%;
+}
+
+.figure:hover .figcaption-red{
+    background-color: rgba(218,41,28,0.9);
+}
+
+.figure:hover .figcaption-blue{
+    background-color: rgba(0,125,187,0.9);
+}
+.figure:hover .figcaption-green{
+    background-color: rgba(84,128,45,0.9);
+}
+.figure:hover .figcaption-yellow{
+    background-color: rgba(211,68,0,0.9);
+}
+
+.figure:hover .figcaption {
+  background-color: rgba(218,41,28,0.9);
+  bottom: 0;
+  top: 70%;
+}
+
+.figure a{
+    display: block;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.view-more{
+    display: inline-block;
+    padding: 5px 5px 3px 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background: #da291c;
+}
+
+.view-more-red {
+    background: #da291c;
+}
+
+.view-more-blue {
+    background: rgba(0,125,187,0.9);
+}
+
+.view-more-yellow {
+    background: rgba(211,68,0,0.9);
+}
+
+.view-more-green {
+    background: rgba(84,128,45,0.9);
+}
+.view-more:hover{
+background: #fff;
+color: #333;
+}
+
+.team {
+	list-style-type:none;
+}
+.team > li >p {
+	width:250px;
+}
+.team >li{
+	margin-bottom:20px;
+	width:33%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+hgroup {
+	display:inline-block;
+}
+.team > li > header > img {
+	height:150px;
+	width:auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ABOUT US */
+
+.icon {
+height:68px;
+width:68px;
+background-image:url('images/socialmediaicons.png'); /*your location of the image may differ*/
+}
+
+.person {background-position:0px 0px;}
+.info {background-position:-68px 0px;}
+.upload {background-position:-136px 0px;}
+.document {background-position:0px -68px;}
+.check {background-position:-68px -68px;}
+.cart {background-position:-136px -68px;}

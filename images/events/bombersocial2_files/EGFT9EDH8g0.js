@@ -1,0 +1,5 @@
+/*!CK:1811314346!*//*1414377720,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["I26Dy"]); }
+
+__d("ChatSidebarGroupThreadsGroup.react",["ChatSidebarThread.react","ChatSidebarSections","ChatSidebarConstants","MercuryIDs","PresenceStatus","React","cx"],function(a,b,c,d,e,f,g,h,i,j,k,l,m){var n=l.createClass({displayName:'ChatSidebarGroupThreadsGroup',propTypes:{groups:l.PropTypes.array.isRequired},render:function(){return (l.createElement("ul",null,this.props.groups.map(this._renderGroup)));},_renderGroup:function(o){var p=o.mercury_thread.participants.map(function(q){return j.getUserIDFromParticipantID(q);});return (l.createElement("li",{className:"_42fz",'data-id':o.uid,key:o.uid},l.createElement(g,{image:o.mercury_thread.image_src,imageSize:i.getImageSize(),name:o.mercury_thread.name,participants:o.participants_to_render,numOtherParticipants:p.length-1,referrer:h.ORDERED_LIST,status:k.getGroup(p),threadFBID:o.uid})));}});e.exports=n;},null);
