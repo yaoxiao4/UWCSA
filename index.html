@@ -1,5 +1,6 @@
 <html >
 <head>
+	<title>UWCSA</title>
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
@@ -12,8 +13,9 @@
 	<script src="js/app.js"></script>
 
 </head>
-<body ng-app="csa">
-	<div style="height:100px; overflow:hidden;background-image:url('images/topbanner.jpg')" >
+<body ng-app="csa" style="background-image:url('images/bodybackground.jpg')">
+	<div id="mainContainer" style="width:90%;margin-left:auto;margin-right:auto; background-color:white">
+	<div id="topbanner"style="height:100px; overflow:hidden;background-image:url('images/topbanner.jpg')" >
 		<a class="navbar-brand" href="#" style="padding-left:0; padding-top:0">
 			<img alt="UWCSA" src="images/csa.png" width=100 height=100>
 		</a>
@@ -21,8 +23,8 @@
 			<h1 style="text-align:center">University of Waterloo Chinese Student Association</h1>
 		</div>
 	</div>
-	<nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px; text-align:center;width:100%;">
-		<div class="container-fluid">
+	<nav ng-controller="navCtrl" class="navbar navbar-default" role="navigation" style="margin-bottom:0px; text-align:center;width:100%; padding-left:0">
+		<div class="container-fluid" style="padding-left:0">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -34,21 +36,21 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left:auto;margin-right:auto; width:70%">
-				<ul class="nav navbar-nav navbar-left" style="text-align:center;width:100%">
-					<li class="active centeredlist"><a ng-href="#">Home</a></li>
-					<li class="centeredlist"><a ng-href="#about">About Us</a></li>
-					<li class="centeredlist"><a ng-href="#events">Events</a></li>
-					<li class="centeredlist"><a ng-href="#join">Join Us</a></li>
-					<li class="centeredlist"><a ng-href="#contact">Contact Us</a></li>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left:0px; width:70%">
+				<ul class="nav navbar-nav navbar-left" style=";width:100%">
+					<li id="homeitem" class="centeredlist" ng-click="changeNav(1)"><a ng-href="#"><i class="glyphicon glyphicon-home"> </i> Home</a></li>
+					<li id="aboutitem" class="centeredlist"ng-click="changeNav(2)"><a ng-href="#about"><i class="glyphicon glyphicon-info-sign"> </i> About Us</a></li>
+					<li id="eventsitem" class="centeredlist"ng-click="changeNav(3)"><a ng-href="#events"><i class="glyphicon glyphicon-star"> </i> Events</a></li>
+					<li id="joinitem" class="centeredlist"ng-click="changeNav(4)"><a ng-href="#join"><i class="glyphicon glyphicon-user"> </i> Join Us</a></li>
+					<li id="contactitem" class="centeredlist"ng-click="changeNav(5)"><a ng-href="#contact"><i class="glyphicon glyphicon-phone-alt"> </i> Contact Us</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 
 		</div><!-- /.container-fluid -->
 	</nav>
-	<div ng-view>
+	<div  ng-view>
 
 	</div>
-
+</div>
 </body>
 </html>

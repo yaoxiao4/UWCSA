@@ -1,4 +1,21 @@
 .centeredlist {
-	display:inline-block !important;
-	float:none !important;
+/*	display:inline-block !important;
+	float:none !important;*/
+}
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
+	color:#5C5858 !important;
+
+
+}
+.carousel img {
+  width:auto;
+  max-height: 400px;
+  min-height: 400px !important;
+  max-width: none !important;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+#mainContainer, #topbanner {
+    border-radius: 25px 25px 0px 0px;
 }

@@ -22,7 +22,7 @@ csaapp.config(['$routeProvider',
       }).
       when('/', {
         templateUrl: 'templates/home.html',
-            controller: 'homectrl'
+            controller: 'navCtrl'
       }).      
       otherwise({
         	redirectTo: '/'
@@ -30,7 +30,50 @@ csaapp.config(['$routeProvider',
 
 	}]);
 
-csaapp.controller('homectrl', ['$scope', function($scope) {
+csaapp.controller('navCtrl', ['$scope', '$location', '$route', function($scope,$location,$route) {
+    $scope.location = $location.url();
 
+    $scope.currlocation = function(){
+      if ($scope.location == "/"){
+        $('#homeitem').addClass("active");
+      }
+      else if ($scope.location == '/about/'){
+        $('#aboutitem').addClass("active");
+      }
+      else if ($scope.location == '/events/'){
+        $('#eventsitem').addClass("active");
+      }
+      else if ($scope.location == '/join/'){
+        $('#joinitem').addClass("active");
+      }
+      else if ($scope.location == '/contact/'){
+        $('#contactiem').addClass("active");
+      };
+    }
+
+    $scope.currlocation();
+
+    $scope.changeNav = function(current){
+      $('.centeredlist').removeClass("active");
+      switch(current){
+        case 1:
+          $('#homeitem').addClass("active");
+          break;
+        case 2:
+          $('#aboutitem').addClass("active");
+          break;        
+        case 3:
+          $('#eventsitem').addClass("active");
+          break;        
+        case 4:
+          $('#joinitem').addClass("active");
+          break;
+        case 5:
+          $('#contactitem').addClass("active");
+          break;
+
+      }
+
+    }
 
 }]);
