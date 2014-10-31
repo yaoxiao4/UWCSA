@@ -1,12 +1,14 @@
-.centeredlist {
+.centeredlist:hover {
+	background-color:lightgray;
 /*	display:inline-block !important;
 	float:none !important;*/
 }
-h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
+a, h1, h2, h3, h4, p, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
 	color:#5C5858 !important;
-
+	font-family: 'Source Sans Pro', sans-serif;
 
 }
+
 .carousel img {
   width:auto;
   max-height: 400px;
@@ -20,7 +22,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
 
 /* CONTENT MANAGEMENT */
 .figure {
-    -webkit-filter: grayscale(50%);
+    -webkit-filter: grayscale(60%);
     overflow: hidden;
     position: relative;
 }
@@ -155,6 +157,13 @@ hgroup {
     width: 100px;
     height: 100px;
 }
+
+/* JOIN US */
+#membershipcard {
+	margin-right:40px;
+	border-radius: 40px;
+}
+
 
 
 /* ABOUT US */

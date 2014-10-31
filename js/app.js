@@ -17,6 +17,10 @@ csaapp.config(['$routeProvider',
        	templateUrl: 'templates/join.html',
        		 	//controller: 'PhoneDetailCtrl'
       }).
+      when('/execs/', {
+        templateUrl: 'templates/execs.html',
+            //controller: 'PhoneDetailCtrl'
+      }).
       when('/contact/', {
        	templateUrl: 'templates/contact.html',
        		 	//controller: 'PhoneDetailCtrl'
@@ -44,7 +48,10 @@ csaapp.controller('navCtrl', ['$scope', '$location', '$route', function($scope,$
         $('#joinitem').addClass("active");
       }
       else if ($scope.location == '/contact/'){
-        $('#contactiem').addClass("active");
+        $('#contactitem').addClass("active");
+      }
+      else if ($scope.location == '/execs/'){
+        $('#execsitem').addClass("active");
       };
     }
 
@@ -68,6 +75,14 @@ csaapp.controller('navCtrl', ['$scope', '$location', '$route', function($scope,$
         case 5:
           $('#contactitem').addClass("active");
           break;
+        case 6:
+          $('#execsitem').addClass("active");
+          break;
+        default:
+          $('#aboutitem').addClass("active");
+          break;
+
+
 
       }
 
