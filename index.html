@@ -6,31 +6,39 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
-	<!-- Begin MailChimp Signup Form -->
-	<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-	<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
   <!-- SCRIPTS -->
   <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-route.min.js"></script>	
+  <script src="js/angular.min.js"></script>	
   <script src="js/bootstrap.min.js"></script>		
   <script src="js/bootstrap.js"></script>		
   <script src="js/app.js"></script>
 
 </head>
 <body ng-controller="navCtrl" >
-	<div id="mainContainer" style="width:100%;margin-left:auto;margin-right:auto; background-color:white">
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1681424525468625',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "http://connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div id="main-container" >
 		<div id="topbanner" style="height:180px; width:100%; padding-bottom:20px; padding-top:15px;overflow:hidden;background-color:black" >
 			<a class="navbar-brand" href="#" style="margin-left:45%;margin-right:auto;padding-left:0; padding-top:0">
 				<img alt="UWCSA" src="images/logo-white.png" width=150 height=150>
 			</a>
-			<!-- <div class="navbar-brand" style="float:right;margin-right:20px">
-				<h1 style="text-align:right">UW Chinese Student Association</h1>
-			</div> -->
 		</div>
 		<nav  class="navbar navbar-default" role="navigation" style="margin-bottom:0px; text-align:center;width:100%; padding-left:0">
 			<div class="container-fluid" style="padding-left:0">
@@ -48,27 +56,73 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left:0px; width:100%">
 					<ul class="nav navbar-nav navbar-left">
 
-						<li id="eventsitem" class="centeredlist"ng-click="changeNav(3)"><a ng-href="#events"><i class="glyphicon glyphicon-star"> </i> Events</a></li>
-						<li id="aboutitem" class="centeredlist"ng-click="changeNav(2)"><a ng-href="#about"><i class="glyphicon glyphicon-info-sign"> </i> About Us</a></li>				<li id="execsitem" class="centeredlist"ng-click="changeNav(6)"><a ng-href="#execs"><i class="glyphicon glyphicon-user"> </i> Exec Team</a></li>
-						<li id="joinitem" class="centeredlist"ng-click="changeNav(4)"><a ng-href="#join"><i class="glyphicon glyphicon-pencil"> </i> Join Us</a></li>
-						<li id="contactitem" class="centeredlist"ng-click="changeNav(5)"><a ng-href="#contact"><i class="glyphicon glyphicon-phone-alt"> </i> Contact Us</a></li>
+						<li id="eventsitem" class="centeredlist"ng-click="changeNav(3)"><a href=""><i class="glyphicon glyphicon-star"> </i> Events</a></li>
+						<li id="aboutitem" class="centeredlist"ng-click="changeNav(2)"><a href=""><i class="glyphicon glyphicon-info-sign"> </i> About Us</a></li>				<li id="execsitem" class="centeredlist"ng-click="changeNav(6)"><a href=""><i class="glyphicon glyphicon-user"> </i> Exec Team</a></li>
+						<li id="joinitem" class="centeredlist"ng-click="changeNav(4)"><a href=""><i class="glyphicon glyphicon-pencil"> </i> Join Us</a></li>
+						<li id="contactitem" class="centeredlist"ng-click="changeNav(5)"><a href=""><i class="glyphicon glyphicon-phone-alt"> </i> Contact Us</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right" >
 						<li><a style="padding:5px 7px 0 0"  target="_blank" href="https://www.facebook.com/groups/2241879340/"><img src="images/icons/flat/PNG/facebook.png" style="height:40px;width:40px"></a></li>
 
-						<li><a style="padding:5px 7px 0 0"  target="_blank"href="https://twitter.com/UWaterlooCSA"><img src="images/icons/flat/PNG/twitter.png" style="height:40px;width:40px"></a></li>
+						<li><a style="padding:5px 7px 0 0"  target="_blank" href="https://twitter.com/UWaterlooCSA"><img src="images/icons/flat/PNG/twitter.png" style="height:40px;width:40px"></a></li>
 
-						<li><a style="padding:5.5px 7px 0 0" target="_blank"href="http://instagram.com/uwcsa"><img src="images/icons/flat/PNG/instagram.png" style="height:37.5px;width:38px"></a></li>
+						<li><a style="padding:5.5px 7px 0 0" target="_blank" href="http://instagram.com/uwcsa"><img src="images/icons/flat/PNG/instagram.png" style="height:37.5px;width:38px"></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 
 			</div><!-- /.container-fluid -->
 		</nav>
-		<div ng-view>
+		<div class="body-container">
+			<div class="events">
+				<h2 class="event-header">Upcoming Events</h2>
+				<div id="event-carousel" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div ng-class="{active:!$index}" ng-repeat="event in upcomingEvents" class="item figure upcoming">
+							<button ng-click="toEvent(' ')" title="View more" style="border:0; padding:0; margin:0;width:100%;">
+								<div class="largeEventImg" ng-style="{'background-image': event.backgroundImage}"}>
+								</div>
+								<div class="figcaption">
+									<h6 class="ng-binding">{{event.title}}<br/><br/>{{event.caption}}</h6>
+								</div>
+							</button>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#event-carousel"  role="button" data-slide="prev">
+					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#event-carousel" role="button" data-slide="next">
+					  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<h2 class="event-header">Past Events</h2>
+
+				<div id="contentMarketingContainerPast">
+					<div ng-repeat="event in pastEvents" class="figure past">
+						<button ng-click="toEvent('https://www.facebook.com/events/385498668241792/')" title="View more" style="border:0; padding:0; margin:0;width:100%;">
+							<div class="smallEventImg" ng-style="{'background-image': event.backgroundImage}">
+							</div>
+							<div class="figcaption-blue figcaption-small" style="width:100%;">
+								<h6 class="ng-binding">{{event.title}}<br/><br/>{{event.caption}}</h6>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="social-media">
+				<div class="fb-page" data-href="https://www.facebook.com/UWaterlooCSA" data-tabs="timeline" data-width="330px" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UWaterlooCSA"><a href="https://www.facebook.com/UWaterlooCSA">UWCSA</a></blockquote></div></div>
+				<a class="twitter-timeline" width="330" height="600px" href="https://twitter.com/UWaterlooCSA" data-widget-id="691717760477335552">Tweets by @UWaterlooCSA</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 
 		</div>
-
 	</div>
-	<div style="margin-top:30px;background-color:black;color:white; text-align:center"><span>UWCSA 2015, All Rights Reserved</span></div>
+<!-- 	<div style="margin-top:30px;background-color:black;color:white; text-align:center"><span>UWCSA 2014, All Rights Reserved</span></div> -->
 </body>
 </html>

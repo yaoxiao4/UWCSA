@@ -1,26 +1,122 @@
-.centeredlist:hover {
-	background-color:lightgray;
-/*	display:inline-block !important;
-	float:none !important;*/
-}
-a, h1, h2, h3, h4, p, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
-	color:#5C5858 !important;
-	font-family: 'Source Sans Pro', sans-serif;
-
+/* NAV */
+.navbar {
+    position: absolute;
+    z-index: 5000;
 }
 
-.carousel img {
-  width:auto;
-  max-height: 400px;
-  min-height: 400px !important;
-  max-width: none !important;
+.navbar.fixed {
+    position: fixed;
+    top: 0;
 }
-.carousel-inner > .item > img {
+
+/* CAROUSEL */
+
+#event-carousel {
+    width: 100%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+/* Maincontainer */
+
+#main-container {
+    background-color: darkred;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.body-container {
+    background-color: white;
+    vertical-align: top;
+    padding-top: 50px;
+    max-width: 1280px;
+    width: 80%;
+
     margin: 0 auto;
 }
 
+.social-media {
+    display: inline-block;
+    vertical-align: top;
+}
 
-/* CONTENT MANAGEMENT */
+/* Twitter feed */
+.twitter-timeline {
+    position: absolute !important;
+    margin-top: 652px !important;
+    min-width: 200px !important;
+}
+
+/* FB feed */
+.fb-page {
+    position: absolute !important;
+    margin-top: 35px !important;
+    min-width: 200px;
+    width: 330px;
+}
+
+/* EVENT MANAGEMENT */
+.event-header {
+    margin-left:20px;
+    margin-top:35px;
+    font: 16px;
+}
+
+.events {
+    margin-right: 40px;
+    width: 70%;
+    display: inline-block;
+}
+
+#contentMarketingContainer {
+    height: 265px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.figure.upcoming {
+    width: 100%;
+    float: left;
+    height: 300px;
+}
+
+.largeEventImg {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    background-color:white;
+    background-size:100% auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#contentMarketingContainerPast {
+    height: 265px;
+    padding: 0px;
+    margin-bottom: 150px;
+}
+
+.figure.past {
+    float:left;
+    width: 50%;
+    height:100%;
+    vertical-align:top;
+    display:inline-block;
+}
+
+.smallEventImg {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 .figure {
     -webkit-filter: grayscale(60%);
     overflow: hidden;
@@ -35,43 +131,42 @@ a, h1, h2, h3, h4, p, .h1, .h2, .h3, .h4, .h, .p, .p1, .p2, .p3 {
 	width:100%;
     background-color: rgba(218,41,28,0.9);
     position: absolute;
-    top: 228px;
+    top: 250px;
     font-family: 'DINWebPro-Medium',Arial,sans-serif;
     padding: 5px;
     text-align: center;
     transition: all 0.5s ease;
     color: #fff;
     min-height:104px;
-
 }
 
 .figcaption h6{
-
+    font-size: 18px;
     text-transform: uppercase;
 }
 
 .figcaption-small {
-
     background-color: #3399FF;
     position: absolute;
-    top: 95px;
+    top: 220px;
     font-family: 'DINWebPro-Medium',Arial,sans-serif;
     padding: 5px;
     text-align: center;
     transition: all 0.5s ease;
     color: #fff;
     font-size: 12px;
-    min-height:100px;
+    min-height:104px;
 }
 
 .figcaption-small h6{
     text-transform: uppercase;
     color:#fff;
+    font-size: 18px;
 }
 
 .figure:hover .figcaption-small {
   bottom: 0;
-  top: 50%;
+  top: 60%;
 }
 
 .figure:hover .figcaption-red{
