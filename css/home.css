@@ -1,5 +1,6 @@
 /* NAV */
 .navbar {
+    min-width: 1248px;
     position: absolute;
     z-index: 5000;
 }
@@ -23,18 +24,20 @@
 /* Maincontainer */
 
 #main-container {
-    background-color: darkred;
+    background-image: url('../images/background1.jpg');
     width:100%;
     margin-left:auto;
     margin-right:auto;
+    min-width: 1248px;
 }
 
 .body-container {
     background-color: white;
     vertical-align: top;
     padding-top: 50px;
-    max-width: 1280px;
     width: 80%;
+
+    min-width: 1248px;
 
     margin: 0 auto;
 }
