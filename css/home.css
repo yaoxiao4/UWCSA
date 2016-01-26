@@ -1,6 +1,6 @@
 /* NAV */
 .navbar {
-    min-width: 1248px;
+    width: 100%;
     position: absolute;
     z-index: 5000;
 }
@@ -35,7 +35,7 @@
     background-color: white;
     vertical-align: top;
     padding-top: 50px;
-    width: 80%;
+    width: 100%;
 
     min-width: 1248px;
 
@@ -70,6 +70,7 @@
 }
 
 .events {
+    padding-left: 30px;
     margin-right: 40px;
     width: 70%;
     display: inline-block;
@@ -148,6 +149,14 @@
     text-transform: uppercase;
 }
 
+.figcaption p{
+    font-size: 16px;
+}
+
+.figcaption-small p{
+    font-size: 16px;
+}
+
 .figcaption-small {
     background-color: #3399FF;
     position: absolute;
@@ -201,7 +210,6 @@
 .view-more{
     display: inline-block;
     padding: 5px 5px 3px 5px;
-    text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
