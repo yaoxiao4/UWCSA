@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  #main-container {
+    width:100%;
+    min-width: 100%;
+  }
+  .body-container {
+    background-color: white;
+    vertical-align: top;
+    padding-top: 50px;
+    width: 100%;
+    min-width: 100%;
+  }
+}
