@@ -120,6 +120,12 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
           $('.navbar').removeClass('fixed');
         }
     });
+    
+    $( window ).resize(function() {
+        var container_width = $('#pageContainer').width();    
+        $('#pageContainer').html('<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="' + container_width + '" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>');
+        FB.XFBML.parse();    
+    });
 
     // $scope.changeNav = function(current){
     //   $('.centeredlist').removeClass("active");

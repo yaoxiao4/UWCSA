@@ -1,0 +1,23 @@
+.about-us {
+	padding: 25px;
+	color: white;
+	background-image: url('../images/background1.jpg')
+}
+
+.section-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.about-description {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.section-description {
+	font-size: 20px;
+}
+
+.image-container img{
+	width: 100%;
+}

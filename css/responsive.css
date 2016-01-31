@@ -49,22 +49,38 @@
   }
 
   .figcaption-small h6{
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
   }
 
   .figure:hover .figcaption {
     background-color: rgba(218,41,28,0.9);
     bottom: 0;
-    top: 70%;
+    top: 75%;
+  }
+
+  .figure.past {
+    height: 120px;
+  }
+
+  .smallEventImg {
+    height: 100px;
   }
 
   .figcaption-small {
-    top: 60%;
+    top: 65%;
+  }
+
+  .figcaption-small:hover {
+    top: 65%;
+  }
+
+  .figure:hover .figcaption-small {
+    top: 65%;
   }
 
   .figcaption {
-    top: 70%;
+    top: 75%;
   }
 
   .figure {
@@ -72,9 +88,10 @@
   }
 
   .figcaption-small>p {
-    display: table-cell;
+    display: none;
+    font-size: 12px;
     vertical-align: middle;
-    height: 50px;
+    height: 35px;
     width: 188px;
   }
 }

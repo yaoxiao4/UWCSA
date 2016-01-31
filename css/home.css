@@ -28,7 +28,7 @@
     width:100%;
     margin-left:auto;
     margin-right:auto;
-    min-width: 1248px;
+    /*min-width: 1248px;*/
 }
 
 .body-container {
@@ -37,7 +37,7 @@
     padding-top: 50px;
     width: 100%;
 
-    min-width: 1248px;
+    /*min-width: 1248px;*/
 
     margin: 0 auto;
 }
@@ -70,6 +70,7 @@
 }
 
 .events {
+    padding-bottom: 30px;
     padding-left: 30px;
     margin-right: 40px;
     width: 70%;
@@ -145,6 +146,7 @@
 }
 
 .figcaption h6{
+    font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -160,7 +162,7 @@
 .figcaption-small {
     background-color: #3399FF;
     position: absolute;
-    top: 220px;
+    top: 217px;
     font-family: 'DINWebPro-Medium',Arial,sans-serif;
     padding: 5px;
     text-align: center;
@@ -171,6 +173,7 @@
 }
 
 .figcaption-small h6{
+    font-weight: bold;
     text-transform: uppercase;
     color:#fff;
     font-size: 18px;
@@ -178,10 +181,10 @@
 
 .figure:hover .figcaption-small {
   bottom: 0;
-  top: 60%;
+  top: 65%;
 }
 
-.figure:hover .figcaption-red{
+/*.figure:hover .figcaption-red{
     background-color: rgba(218,41,28,0.9);
 }
 
@@ -194,7 +197,7 @@
 .figure:hover .figcaption-yellow{
     background-color: rgba(211,68,0,0.9);
 }
-
+*/
 .figure:hover .figcaption {
   background-color: rgba(218,41,28,0.9);
   bottom: 0;
@@ -236,34 +239,6 @@ background: #fff;
 color: #333;
 }
 
-.team {
-	list-style-type:none;
-}
-.team > li >p {
-	width:250px;
-}
-.team >li{
-	margin-bottom:20px;
-	width:33%;
-	display:inline-block;
-	vertical-align: top;
-}
-
-hgroup {
-	display:inline-block;
-}
-.team > li > header > img {
-	height:150px;
-	width:auto;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
 /* JOIN US */
 #membershipcard {
 	margin-right:40px;
@@ -286,3 +261,9 @@ background-image:url('images/socialmediaicons.png'); /*your location of the imag
 .document {background-position:0px -68px;}
 .check {background-position:-68px -68px;}
 .cart {background-position:-136px -68px;}
+
+.fb-page {
+    width: 25% !important;
+}
+
+.fb-page span, .fb-page span ._2p3a , .fb-page span iframe[style] { width: 100% !important; }

@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/execs.css">
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
   </style>
   <!-- SCRIPTS -->
@@ -78,20 +80,20 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 		<div class="body-container">
-			<div class="events">
+			<div class="events large-section">
 				<h2 class="event-header">Upcoming Events</h2>
 				<div id="event-carousel" class="carousel slide" data-interval="10000" data-ride="carousel">
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div ng-class="{active:!$index}" ng-repeat="event in upcomingEvents" class="item figure upcoming">
-							<button ng-click="toEvent(' ')" title="View more" style="border:0; padding:0; margin:0;width:100%;">
+							<a target="_blank" ng-href="{{event.link}}" title="View more" style="border:0; padding:0; margin:0;width:100%;">
 								<div class="largeEventImg" ng-style="{'background-image': event.backgroundImage}"}>
 								</div>
 								<div class="figcaption">
 									<h6 class="ng-binding">{{event.title}}</h6>
 									<p> {{event.caption}} </p>
 								</div>
-							</button>
+							</a>
 						</div>
 					</div>
 
@@ -110,26 +112,173 @@
 
 				<div id="contentMarketingContainerPast">
 					<div ng-repeat="event in pastEvents" class="figure past">
-						<button ng-click="toEvent('https://www.facebook.com/events/385498668241792/')" title="View more" style="border:0; padding:0; margin:0;width:100%;">
+						<a target="_blank" ng-href="{{event.link}}" title="View more" style="border:0; padding:0; margin:0;width:100%;">
 							<div class="smallEventImg" ng-style="{'background-image': event.backgroundImage}">
 							</div>
 							<div class="figcaption-blue figcaption-small" style="width:100%;">
 								<h6 class="ng-binding">{{event.title}}</h6>
 								<p> {{event.caption}} </p>
 							</div>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="social-media">
-				<div class="fb-page" data-href="https://www.facebook.com/UWaterlooCSA" data-tabs="timeline" data-width="330px" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UWaterlooCSA"><a href="https://www.facebook.com/UWaterlooCSA">UWCSA</a></blockquote></div></div>
-				<a class="twitter-timeline" width="330" height="600px" href="https://twitter.com/UWaterlooCSA" data-widget-id="691717760477335552">Tweets by @UWaterlooCSA</a>
+				<div class="fb-page" data-href="https://www.facebook.com/UWaterlooCSA/?fref=ts" data-tabs="timeline" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UWaterlooCSA/?fref=ts"><a href="https://www.facebook.com/UWaterlooCSA/?fref=ts">UWCSA</a></blockquote></div></div>
+				<a class="twitter-timeline" width="22%" height="600px" href="https://twitter.com/UWaterlooCSA" data-widget-id="691717760477335552">Tweets by @UWaterlooCSA</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 
-		</div>
+			<div class="about-us large-section">
+				<div class="about-description">
+					<p class="section-title"> Who We Are </p><br/>
+					<div class="section-description">
+						<p>The University of Waterloo Chinese Students’ Association was first established nearly 40 years ago with a vision towards bringing awareness of the Chinese community. After its establishment, UWCSA has expanded to more than 1000 members. Being the largest Chinese cultural club at the University of Waterloo, we serve to connect and unite the diverse Chinese students of our institution, and in the process, contribute to multiculturalism throughout our university.
+						</p>		
+						<p>UWCSA is widely renowned for its planning and execution of successful term events and activities. We host a variety of events, such as singing contests and sporting events, to facilitate and foster communication between our members. We also organize social events with other clubs that are not limited to those at University of Waterloo to extend our culture to others. 
+						</p>
+						<p>In the future, the members of UWCSA are hoping to be able to expand and grow with one another, creating an association that is both successful and beneficial to all the students of the University of Waterloo.</p>
+
+						<p>
+							滑鐵盧大學中國同學會是一個非牟利組織，為滑鐵盧大學的海外華僑服務。我們致力推廣中國文化，提供各種溝通渠道，以拉近中國同學之間的距離為尚。
+						</p>
+
+						<p>
+
+							滑鐵盧大學中國同學會成立超過四十年，是滑鐵盧大學最大的華僑學會。我們舉辦各項不同類型的活動供同學參加，各展所長。多年來舉辨活動包括：舞台劇、歌唱比賽、運動比賽、撲克牌及麻雀遊戲等等，鼓勵同學在參與活動的同時，作文化交流及興趣分享。滑鐵盧大學中國同學經常與其他大學的學會合辦活動，為同學提供更多文化交流的機會。
+						</p>
+					</div>
+					<div class="image-container">
+						<img src="images/csabanner.jpg" style="border-radius: 20px">
+					</div>
+				</div>
+			</div>
+
+			<div class="execs">
+			  <h1>Applications for the Winter Term exec team are now <strong>CLOSED</strong></h1>
+			    <h2>Senior Exec Team Winter 2016</h2>
+			    <section class="team-members">
+			      <ul class="team">
+			        
+			        <li>
+			          <header class="cf">
+			            <img src="images/execs/lokhinyuen.jpg">
+			            <hgroup>
+			              <h6><strong>Lok-Hin Yuen</strong></h6>
+			              <span>Co-President</span>
+			              <br/>
+			            </hgroup>
+			          </header>
+			        </li>       
+
+			        <li>
+			        <header class="cf">
+			          <img src="images/execs/ritachen.jpg">
+			          <hgroup>
+			            <h6><strong>Rita Chen</strong></h6>
+			            <span>Co-President</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      
+			      <li>
+			        <header class="cf">
+			          <img src="images/execs/generic.png">
+			          <hgroup>
+			            <h6><strong>Edward Tam</strong></h6>
+			            <span>Co-President</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+
+			        <header class="cf">
+			          <img src="images/execs/ellisluo.jpg">
+			          <hgroup>
+			            <h6><strong>Ellis Luo </strong></h6>
+			            <span>VP, Operations</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+
+			        <header class="cf">
+			          <img src="images/execs/vickylee.jpg">
+			          <hgroup>
+			            <h6><strong>Vicky Lee</strong></h6>
+			            <span>Director, Operations</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+
+			        <header class="cf">
+			          <img src="images/execs/danielliu.jpg">
+			          <hgroup>
+			            <h6><strong>Daniel Liu</strong></h6>
+			            <span>Director, Operations</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+
+			        <header class="cf">
+			          <img src="images/execs/generic.png">
+			          <hgroup>
+			            <h6><strong>Kings Lee</strong></h6>
+			            <span>VP, Marketing</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+			        <header class="cf">
+			          <img src="images/execs/generic.png">
+			          <hgroup>
+			            <h6><strong> Daniel Yang </strong> </h6>
+			            <span>Director, Marketing</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      <li>
+			        <header class="cf">
+			          <img src="images/execs/alexwu.jpg">
+			          <hgroup>
+			            <h6><strong>Alex Wu</strong> </h6>
+			            <span>Director, Marketing</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+
+			      <li>
+			        <header class="cf">
+			          <img src="images/execs/generic.png">
+			          <hgroup>
+			            <h6><strong>William Li</strong></h6>
+			            <span>VP, Public Relations</span>
+			            <br/>
+			          </hgroup>
+			        </header>
+			      </li>
+			      
+			    </ul>
+			  </section>
+			</div>
+		</div> <!-- body container -->
 	</div>
+
 <!-- 	<div style="margin-top:30px;background-color:black;color:white; text-align:center"><span>UWCSA 2014, All Rights Reserved</span></div> -->
 </body>
 </html>
+
+<!-- IG BLOCK
+<blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BAbESrwr1eV/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by @uwcsa</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-12T02:53:15+00:00">Jan 11, 2016 at 6:53pm PST</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script> -->
