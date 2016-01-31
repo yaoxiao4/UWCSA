@@ -4,10 +4,10 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
     $scope.location = $location.url();
     $scope.upcomingEvents = [
       {
-        title: "upcomingtest1",
-        backgroundImage: "url(images/events/staytuned.png)",
-        caption: "caption",
-        link: "url(images/events/staytuned.png)"
+        title: "CUSA Annual Semi-Formal: Crystal Gala",
+        backgroundImage: "url(images/events/cusa.png)",
+        caption: "Annual CUSA Semi-Formal",
+        link: "https://www.facebook.com/events/1725742570977981/"
       },
       {
         title: "upcomingtest2",
@@ -19,77 +19,104 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
 
     $scope.pastEvents = [
       {
+        title: "BOMBER BLACKOUT",
+        backgroundImage: "url(images/events/bomberblackout.jpg)",
+        caption: "We’re going to make this one of the best nights of 2016!",
+        link: "https://www.facebook.com/events/431565447029749/"
+      },
+      {
+        title: "THE TASTING HALL: A NIGHT MARKET",
+        backgroundImage: "url(images/events/tastinghall.jpg)",
+        caption: "Come out and experience a bit of Asian culture right here on campus. ",
+        link: "https://www.facebook.com/events/1627820754134340/"
+      },
+      {
+        title: "Ride the Tide",
+        backgroundImage: "url(images/events/ridethetide.jpg)",
+        caption: "Be prepared for a night filled with summer feel-good tunes and beach balls!",
+        link: "https://www.facebook.com/events/919499258104458/"
+      },
+      {
+        title: "UWCSA x GEESERABBIT: BUBBLE SOCCER",
+        backgroundImage: "url(images/events/bubblesoccer.jpg)",
+        caption: "Come on down and play a game of bubble soccer with your friends! ",
+        link: "https://www.facebook.com/events/1690798727801005/"
+      },
+      {
+        title: "HANGMAN [ESCAPE ROOM]",
+        backgroundImage: "url(images/events/hangman.jpg)",
+        caption: "Will you live to tell the tale, or be locked in FOREVER? One way to find out.",
+        link: "https://www.facebook.com/events/1675603609365107/"
+      },
+      {
         title: "FROZEN",
         backgroundImage: "url(images/events/frozen.jpg)",
-        caption: "A Bomber Social Night",
+        caption: "♫ The booze never bothered me anyway... ♫",
         link: "https://www.facebook.com/events/385498668241792/"
       },
+    ]
+
+    $scope.currentExecs = [
       {
-        title: "Therapy Dogs",
-        backgroundImage: "url(images/events/therapydogs.jpg)",
-        caption: "Don't let midterms DOG you down!",
-        link: "https://www.facebook.com/events/399074040259797/'"
+        name: "William Li",
+        title: "Co-president",
+        pictureUrl: "url(images/execsw2016/WilliamLi.jpg"
       },
       {
-        title: "Eat Your Heart Out",
-        backgroundImage: "url(images/events/eatyourheartout.jpg)",
-        caption: "a TEAM speed eating contest in the SLC!",
-        link: "https://www.facebook.com/events/751966311553709/?sid_reminder=16437325173096448"
+        name: "Edward Tam",
+        title: "Co-president",
+        pictureUrl: "url(images/execsw2016/EdwardTam.jpg"
       },
       {
-        title: "A Night in Gangnam",
-        backgroundImage: "url(images/events/nightingangnam.jpg)",
-        caption: "Dress up as your favourite KPOP star and sing your hearts out!",
-        link: "https://www.facebook.com/events/636466503147193/"
+        name: "Lokhin Yuen",
+        title: "Co-president",
+        pictureUrl: "url(images/execsw2016/LokhinYuen.jpg"
       },
       {
-        title: "Poker Night",
-        backgroundImage: "url(images/events/pokernight2.jpg)",
-        caption: "UWCSA and UW Poker Club returns with another edition of POKER NIGHT!",
-        link: "https://www.facebook.com/events/338272603021423/"
+        name: "Rita Chen",
+        title: "VP Admin/Internal",
+        pictureUrl: "url(images/execsw2016/RitaChen.jpg"
       },
       {
-        title: "Bomber Social V2",
-        backgroundImage: "url(images/events/bombersocial2.jpg)",
-        caption: "Mix and mingle with other fellow students and meet new friends!",
-        link: "https://www.facebook.com/events/553674981433041/"
+        name: "Rachel Poon",
+        title: "Director, Admin",
+        pictureUrl: "url(images/execsw2016/RachelPoon.jpg"
       },
-      // {
-      //   title: "Halloween Horror Escape",
-      //   backgroundImage: "url(images/events/horrorescape.jpg)",
-      //   caption: "Will you and your friends be able to survive through this cursed cabin?",
-      //   link: "https://www.facebook.com/events/710855105666068/"
-      // },
-      // {
-      //   title: "Friendly Bumps",
-      //   backgroundImage: "url(images/events/friendlybumps.jpg)",
-      //   caption: "play in bubbles? yes please!",
-      //   link: "https://www.facebook.com/events/595295273926246/"
-      // },
-      // {
-      //   title: "Orientation Day",
-      //   backgroundImage: "url(images/events/orientation.jpg)",
-      //   caption: "Come meet your members and execs!",
-      //   link: "https://www.facebook.com/events/1470748533185355/?ref=4"
-      // },
-      // {
-      //   title: "Halloween Horror Escape",
-      //   backgroundImage: "url(images/events/horrorescape.jpg)",
-      //   caption: "Will you and your friends be able to survive through this cursed cabin?",
-      //   link: "https://www.facebook.com/events/710855105666068/"
-      // },
-      // {
-      //   title: "Friendly Bumps",
-      //   backgroundImage: "url(images/events/friendlybumps.jpg)",
-      //   caption: "play in bubbles? yes please!",
-      //   link: "https://www.facebook.com/events/595295273926246/"
-      // },
-      // {
-      //   title: "Orientation Day",
-      //   backgroundImage: "url(images/events/orientation.jpg)",
-      //   caption: "Come meet your members and execs!",
-      //   link: "https://www.facebook.com/events/1470748533185355/?ref=4"
-      // }
+      {
+        name: "Michael Luk",
+        title: "VP Events and Operations",
+        pictureUrl: "url(images/execsw2016/MichaelLuk.jpg"
+      },
+      {
+        name: "Sherlyn Vuong",
+        title: "VP Events and Operations",
+        pictureUrl: "url(images/execsw2016/SherlynVuong.jpg"
+      },
+      {
+        name: "David Zhang",
+        title: "Director, Operations",
+        pictureUrl: "url(images/execsw2016/DavidZhang.jpg"
+      },
+      {
+        name: "Herman Li",
+        title: "VP External",
+        pictureUrl: "url(images/execsw2016/HermanLi.jpg"
+      },
+      {
+        name: "Joyce Zhong",
+        title: "Director, External",
+        pictureUrl: "url(images/execsw2016/JoyceZhong.jpg"
+      },
+      {
+        name: "Andy Truong",
+        title: "VP Marketing",
+        pictureUrl: "url(images/execsw2016/AndyTruong.jpg"
+      },
+      {
+        name: "Nina Pan",
+        title: "Director, PR",
+        pictureUrl: "url(images/execsw2016/NinaPan.jpg"
+      },
     ]
 
     $scope.currlocation = function(){
@@ -120,7 +147,7 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
           $('.navbar').removeClass('fixed');
         }
     });
-    
+
     $( window ).resize(function() {
         var container_width = $('#pageContainer').width();    
         $('#pageContainer').html('<div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="' + container_width + '" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>');

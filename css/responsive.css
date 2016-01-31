@@ -94,4 +94,12 @@
     height: 35px;
     width: 188px;
   }
+
+  .picture-holder {
+    height: 200px !important;
+  }
+
+/*  .team >li{
+    width:49%;
+  }*/
 }

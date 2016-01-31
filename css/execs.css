@@ -1,7 +1,8 @@
 .execs {
 	background-color: white;
 	width: 100%;
-	padding: 25px;
+	padding-top: 40px;
+	padding-left: 10%;
 }
 
 
@@ -13,22 +14,29 @@
 }
 .team >li{
 	margin-bottom:20px;
-	width:31%;
 	display:inline-block;
 	vertical-align: top;
 }
 
+.team-members {
+	margin-top: 40px;
+}
+
 hgroup {
 	display:inline-block;
+	font-size: 16px;
 }
-.team > li > header > img {
-	height:150px;
-	width:auto;
-    background-position: 50% 50%;
+
+.exec-name {
+	font-size: 20px;
+}
+
+.profile-image-holder{
+	background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
