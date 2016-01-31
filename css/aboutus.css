@@ -1,8 +1,9 @@
 .gallery {
 	padding: 60px;
+	width: 100%;
 	padding-bottom: 60px;
 	color: white;
-	background-image: url('../images/background1.jpg')
+	background-image: url('../images/background1.jpg');
 }
 
 .section-title {
@@ -20,10 +21,16 @@
 	font-size: 20px;
 }
 
+.gallery .carousel-control {
+	background-image: none !important;
+}
+
 .about {
+	text-align: center;
 	color: #666;
 	width: 100%;
 	padding: 40px;
+	font: 400 16px/1.5 "Roboto", sans-serif;
 }
 
 .about p {

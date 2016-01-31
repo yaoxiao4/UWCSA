@@ -21,6 +21,11 @@
     line-height:40px;
   }
 
+  .navbar-nav a {
+    padding: 0 0 !important;
+    padding-right: 10px !important;
+  }
+
   .navbar .glyphicon {
     margin-right: 15px;
   }

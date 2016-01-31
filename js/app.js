@@ -119,27 +119,6 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
       },
     ]
 
-    $scope.currlocation = function(){
-      if ($scope.location == "/"){
-        $('#homeitem').addClass("active");
-      }
-      else if ($scope.location == '/about/'){
-        $('#aboutitem').addClass("active");
-      }
-      else if ($scope.location == '/events/'){
-        $('#eventsitem').addClass("active");
-      }
-      else if ($scope.location == '/join/'){
-        $('#joinitem').addClass("active");
-      }
-      else if ($scope.location == '/contact/'){
-        $('#contactitem').addClass("active");
-      }
-      else if ($scope.location == '/execs/'){
-        $('#execsitem').addClass("active");
-      };
-    };
-
     $(document).on( 'scroll', function(){
         if ($(window).scrollTop() > 180) {
           $('.navbar').addClass('fixed');
@@ -154,31 +133,9 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
         FB.XFBML.parse();    
     });
 
-    // $scope.changeNav = function(current){
-    //   $('.centeredlist').removeClass("active");
-    //   switch(current){
-    //     case 1:
-    //       $('#homeitem').addClass("active");
-    //       break;
-    //     case 2:
-    //       $('#aboutitem').addClass("active");
-    //       break;        
-    //     case 3:
-    //       $('#eventsitem').addClass("active");
-    //       break;        
-    //     case 4:
-    //       $('#joinitem').addClass("active");
-    //       break;
-    //     case 5:
-    //       $('#contactitem').addClass("active");
-    //       break;
-    //     case 6:
-    //       $('#execsitem').addClass("active");
-    //       break;
-    //     default:
-    //       $('#aboutitem').addClass("active");
-    //       break;
-    //   }
-    // }
+    $scope.changeNav = function(current){
+      var selectedScrolltop = $('#' + current).offset().top - 70;
+      $("html, body").animate({ scrollTop: selectedScrolltop, easing: 'easein' }, 400);
+    };
 
 }]);

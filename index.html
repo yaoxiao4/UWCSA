@@ -67,35 +67,35 @@
 						<li id="logo">
 							<img src="images/logo-white.png" id="navbar-logo">
 						</li>
-						<li id="eventsitem" class="centeredlist"ng-click="changeNav(3)">
-							<i class="glyphicon glyphicon-star"> </i> Events
+						<li id="eventsitem" class="centeredlist" ng-click="changeNav('events')">
+							<span class="menu-item"> Events </span>
 						</li>
-						<li id="aboutitem" class="centeredlist"ng-click="changeNav(2)">
-							<i class="glyphicon glyphicon-info-sign"> </i> About Us
+						<li id="aboutitem" class="centeredlist" ng-click="changeNav('gallery')">
+							<span class="menu-item"> Gallery </span>
 						</li>				
-						<li id="execsitem" class="centeredlist"ng-click="changeNav(6)">
-							<i class="glyphicon glyphicon-user"> </i> Exec Team
+						<li id="execsitem" class="centeredlist" ng-click="changeNav('about')">
+							<span class="menu-item"> About Us </span>
 						</li>
-						<li id="joinitem" class="centeredlist"ng-click="changeNav(4)">
-							<i class="glyphicon glyphicon-pencil"> </i> Join Us
+						<li id="joinitem" class="centeredlist" ng-click="changeNav('team')">
+							<span class="menu-item"> Current Team </span>
 						</li>
-						<li id="contactitem" class="centeredlist"ng-click="changeNav(5)">
-							<i class="glyphicon glyphicon-phone-alt"> </i> Contact Us
+						<li id="contactitem" class="centeredlist" ng-click="changeNav('join')">
+							<span class="menu-item"> Join Us </span>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right social-nav" >
-						<li><a style="padding:30px 0"  target="_blank" href="https://www.facebook.com/groups/2241879340/"><img src="images/icons/flat/facebook.png" style="height:30px;width:30px"></a></li>
+						<li><a style="padding:15px 0"  target="_blank" href="https://www.facebook.com/groups/2241879340/"><img src="images/icons/flat/facebook.png" style="height:40px;width:40px"></a></li>
 
-						<li><a style="padding:30px 0; margin-left: 5px"  target="_blank" href="https://twitter.com/UWaterlooCSA"><img src="images/icons/flat/twitter.png" style="height:30px;width:30px"></a></li>
+						<li><a style="padding:15px 0; margin-left: 5px"  target="_blank" href="https://twitter.com/UWaterlooCSA"><img src="images/icons/flat/twitter.png" style="height:40px;width:40px"></a></li>
 
-						<li><a style="padding:30px 0; margin-left: 5px" target="_blank" href="http://instagram.com/uwcsa"><img src="images/icons/flat/instagram.png" style="height:30px;width:30px"></a></li>
+						<li><a style="padding:15px 0; margin-left: 5px" target="_blank" href="http://instagram.com/uwcsa"><img src="images/icons/flat/instagram.png" style="height:40px;width:40px"></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 
 			</div><!-- /.container-fluid -->
 		</nav>
 		<div class="body-container">
-			<div class="events large-section">
+			<div id="events" class="events large-section">
 				<h2 class="event-header">Upcoming Events</h2>
 				<div id="event-carousel" class="carousel slide" data-interval="10000" data-ride="carousel">
 					<!-- Wrapper for slides -->
@@ -146,26 +146,26 @@
 
 			</div>
 
-			<div class="gallery large-section">
-				<!-- <p class="section-title">Gallery of recent events</p><br/> -->
+			<div id="gallery" class="gallery large-section">
 				<div class="image-container">
 					<css-slider>
 					</css-slider>
 				</div>
 			</div>
 
-			<div class="about row">
+			<div id="about" class="about row">
+				<h2> Discover, Network, Play </h2>
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10 largest">
 					<div class="row">
 						<div class="col-md-4 about-row">
 							<div class="about-icon largest-icon"></div>
-							<p>promote culture and traditions of the Chinese community</p>
+							<p>largest Chinese cultural club in University of Waterloo</p>
 						</div>
 						<div class="col-md-4 about-row">
 							<div class="about-icon feds-icon"></div>
-							<p>Feds approved and proctected</p>
+							<p>Feds approved and protected</p>
 						</div>
 						<div class="col-md-4 about-row">
 							<div class="about-icon history-icon"></div>
@@ -191,9 +191,8 @@
 
 			</div>
 
-			<div class="execs">
-			  <h2>Applications for the Winter Term exec team are now <strong>CLOSED</strong></h1>
-			    <h3>Senior Exec Team Winter 2016</h2>
+			<div id="team" class="execs">
+			  <h2>Senior Exec Team Winter 2016</h1>
 			    <section class="team-members">
 			      <ul class="team row">
 			        <li ng-repeat="exec in currentExecs" class= "col-xs-6 col-sm-6 col-md-4">
