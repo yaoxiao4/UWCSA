@@ -12,6 +12,19 @@
     min-width: 100%;
   }
 
+  .navbar-nav #logo {
+    display: none;
+  }
+
+  .navbar-nav>li {
+    height: 40px;
+    line-height:40px;
+  }
+
+  .navbar .glyphicon {
+    margin-right: 15px;
+  }
+
   .social-media {
     /* currently do not display it on mobile */
     display: none;

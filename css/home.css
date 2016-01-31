@@ -1,13 +1,51 @@
 /* NAV */
+#topbanner {
+    /*display: none;*/
+}
+
 .navbar {
     width: 100%;
     position: absolute;
     z-index: 5000;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .navbar.fixed {
     position: fixed;
     top: 0;
+}
+
+
+.navbar .glyphicon {
+    margin: 0 5px 0 10px;
+    color: #000000;
+}
+
+.navbar-nav #logo {
+    background-color: #000000;
+    padding: 10 20px;
+}
+
+#navbar-logo {
+    height: 80px;
+    width: auto;
+}
+
+.navbar-nav>li {
+    height: 100px;
+    line-height:100px;
+}
+
+.navbar-left>li {
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 /* CAROUSEL */
@@ -34,7 +72,7 @@
 .body-container {
     background-color: white;
     vertical-align: top;
-    padding-top: 50px;
+    padding-top: 100px;
     width: 100%;
 
     /*min-width: 1248px;*/
