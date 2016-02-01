@@ -133,9 +133,13 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
         FB.XFBML.parse();    
     });
 
-    $scope.changeNav = function(current){
-      var selectedScrolltop = $('#' + current).offset().top - 70;
-      $("html, body").animate({ scrollTop: selectedScrolltop, easing: 'easein' }, 400);
+    $scope.changeNav = function(current) {
+      var selectedOffset = $('#' + current).offset(),
+          scrollLocation = 0;
+      if (selectedOffset) {
+          scrollLocation = selectedOffset.top - 70;
+      }
+      $("html, body").animate({ scrollTop: scrollLocation, easing: 'easein' }, 400);
     };
 
 }]);

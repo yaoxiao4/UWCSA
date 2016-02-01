@@ -3,7 +3,8 @@
 	width: 100%;
 	padding-bottom: 60px;
 	color: white;
-	background-image: url('../images/background1.jpg');
+	background-image: url('../images/bodybackground.jpg');
+	background-size: cover;
 }
 
 .section-title {
@@ -25,15 +26,47 @@
 	background-image: none !important;
 }
 
+.about-pretext {
+	margin-top: 50px;
+	padding-top: 40px;
+	position: relative;
+	background-color: #F3AE52;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+}
+
+.about-pretext .container {
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	color: white;
+}
+
+.triangleDown {
+  position: absolute;
+  bottom: -20px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid #F3AE52;
+  width: 0;
+  height: 0;
+  right: 0;
+  left: 0;
+  margin: auto; 
+}
+
 .about {
 	text-align: center;
 	color: #666;
 	width: 100%;
-	padding: 40px;
+	padding: 60px;
 	font: 400 16px/1.5 "Roboto", sans-serif;
+	padding-bottom: 100px;
 }
 
 .about p {
+	text-transform: capitalize;
 	text-align: center;
 	width: 220px;
 	margin: 0 auto;

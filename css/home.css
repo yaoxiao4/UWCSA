@@ -184,7 +184,7 @@ body {
 
 .figcaption {
 	width:100%;
-    background-color: rgba(218,41,28,0.9);
+    background-color: #c28b41;
     position: absolute;
     top: 250px;
     font-family: 'DINWebPro-Medium',Arial,sans-serif;
@@ -253,7 +253,7 @@ body {
 }
 */
 .figure:hover .figcaption {
-  background-color: rgba(218,41,28,0.9);
+  background-color: #F3AE52;
   bottom: 0;
   top: 70%;
 }

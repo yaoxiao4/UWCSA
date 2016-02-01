@@ -117,7 +117,9 @@
     height: 200px !important;
   }
 
-/*  .team >li{
-    width:49%;
-  }*/
+  /* about */
+  .about-pretext h2 {
+    font-size: 22px;
+  }
+
 }

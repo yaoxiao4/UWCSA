@@ -64,7 +64,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left:0px;">
 					<ul class="nav navbar-nav navbar-left">
-						<li id="logo">
+						<li id="logo" ng-click="changeNav()">
 							<img src="images/logo-white.png" id="navbar-logo">
 						</li>
 						<li id="eventsitem" class="centeredlist" ng-click="changeNav('events')">
@@ -146,11 +146,12 @@
 
 			</div>
 
-			<div id="gallery" class="gallery large-section">
-				<div class="image-container">
-					<css-slider>
-					</css-slider>
+
+			<div class="about-pretext">
+				<div class="container">
+					<h2>We serve to connect and unite the diverse Chinese students of our institution</h2>
 				</div>
+				<div class="triangleDown"></div>
 			</div>
 
 			<div id="about" class="about row">
@@ -188,7 +189,13 @@
 					</div>
 				</div>
 				<div class="col-md-1"></div>
+			</div>
 
+			<div id="gallery" class="gallery large-section">
+				<div class="image-container">
+					<css-slider>
+					</css-slider>
+				</div>
 			</div>
 
 			<div id="team" class="execs">
