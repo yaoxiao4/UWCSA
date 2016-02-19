@@ -1,0 +1,51 @@
+.execs {
+	background-color: white;
+	width: 100%;
+	padding: 40px;
+}
+
+.execs h2 {
+	text-align: center;
+}
+
+
+.team {
+	list-style-type:none;
+}
+.team > li >p {
+	width: 250px;
+}
+.team >li{
+	margin-bottom:20px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.team-members {
+	margin-top: 40px;
+}
+
+hgroup {
+	display:inline-block;
+	font-size: 16px;
+}
+
+.cf {
+	text-align: center;
+}
+
+.exec-name {
+	color: black;
+	font-size: 20px;
+}
+
+.profile-image-holder{
+	margin: 0 auto;
+	background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

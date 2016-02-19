@@ -1,0 +1,195 @@
+/* CAROUSEL */
+
+#event-carousel {
+    width: 100%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* EVENT MANAGEMENT */
+.event-header {
+    margin-left:20px;
+    margin-top:35px;
+    font: 16px;
+}
+
+.events {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-right: 40px;
+    width: 70%;
+    display: inline-block;
+}
+
+#contentMarketingContainer {
+    height: 165px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.figure.upcoming {
+    width: 100%;
+    float: left;
+    height: 300px;
+}
+
+.largeEventImg {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    background-color:white;
+    background-size:100% auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#contentMarketingContainerPast {
+    height: 165px;
+    padding: 0px;
+    margin-bottom: 150px;
+}
+
+.figure.past {
+    float:left;
+    width: 50%;
+    height:100%;
+    vertical-align:top;
+    display:inline-block;
+}
+
+.smallEventImg {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.figure {
+    -webkit-filter: grayscale(40%);
+    overflow: hidden;
+    position: relative;
+}
+
+.figure:hover{
+  -webkit-filter: grayscale(0%);
+}
+
+.figcaption {
+	width:100%;
+    background-color: #da591c;
+    position: absolute;
+    top: 250px;
+    font-family: 'DINWebPro-Medium',Arial,sans-serif;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    min-height:104px;
+}
+
+.figcaption h6{
+    /*font-weight: bold;*/
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.figcaption p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.figcaption-small p{
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.figcaption-small {
+    background-color: #FFCC00;
+    position: absolute;
+    top: 120px;
+    font-family: 'DINWebPro-Medium',Arial,sans-serif;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    font-size: 12px;
+    min-height:104px;
+}
+
+.figcaption-small h6{
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 14px;
+}
+
+.figure:hover .figcaption-small {
+  bottom: 0;
+  top: 40%;
+}
+
+/*.figure:hover .figcaption-red{
+    background-color: rgba(218,41,28,0.9);
+}
+
+.figure:hover .figcaption-blue{
+    background-color: rgba(0,125,187,0.9);
+}
+.figure:hover .figcaption-green{
+    background-color: rgba(84,128,45,0.9);
+}
+.figure:hover .figcaption-yellow{
+    background-color: rgba(211,68,0,0.9);
+}
+*/
+.figure:hover .figcaption {
+  bottom: 0;
+  top: 70%;
+}
+
+.figure a{
+    display: block;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.view-more{
+    display: inline-block;
+    padding: 5px 5px 3px 5px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background: #da291c;
+}
+
+.view-more-red {
+    background: #da291c;
+}
+
+.view-more-blue {
+    background: rgba(0,125,187,0.9);
+}
+
+.view-more-yellow {
+    background: rgba(211,68,0,0.9);
+}
+
+.view-more-green {
+    background: rgba(84,128,45,0.9);
+}
+.view-more:hover {
+    background: #fff;
+    color: #333;
+}
+
+.carousel-control.carousel-event {
+    background-image: none !important;
+}

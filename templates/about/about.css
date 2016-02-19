@@ -1,0 +1,99 @@
+.section-title {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+.section-description {
+	font-size: 20px;
+}
+
+.gallery .carousel-control {
+	background-image: none !important;
+}
+
+.about-pretext {
+	margin-top: 50px;
+	padding-top: 40px;
+	position: relative;
+	background-color: #F3AE52;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+}
+
+.about-pretext .container {
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	color: white;
+}
+
+.triangleDown {
+  position: absolute;
+  bottom: -20px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid #F3AE52;
+  width: 0;
+  height: 0;
+  right: 0;
+  left: 0;
+  margin: auto; 
+}
+
+.about {
+	text-align: center;
+	color: #666;
+	width: 100%;
+	padding: 60px;
+	font: 400 16px/1.5 "Roboto", sans-serif;
+	padding-bottom: 100px;
+}
+
+.about p {
+	text-align: center;
+	width: 220px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.about p::first-letter {
+	text-transform: uppercase;
+}
+
+.about-icon {
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.largest-icon {
+	background-image: url('../../images/icons/largestimage.png');
+}
+
+.social-icon {
+	background-image: url('../../images/icons/eventicon.png');
+}
+
+.chinese-icon {
+	background-image: url('../../images/icons/chineseicon.png');
+}
+
+.community-icon {
+	background-image: url('../../images/icons/socialicon.png');
+}
+
+.history-icon {
+	background-image: url('../../images/icons/history.png');
+}
+
+.feds-icon {
+	background-image: url('../../images/icons/feds.png');
+}
+
+.about-row {
+	margin-top: 40px;
+}

@@ -1,0 +1,17 @@
+<div id="team" class="execs">
+  <h2>Senior Exec Team Winter 2016</h1>
+    <section class="team-members">
+      <ul class="team row">
+        <li ng-repeat="exec in currentExecs" class= "col-xs-6 col-sm-6 col-md-4">
+          <header class="cf">
+            <div class="profile-image-holder " ng-style="{'background-image': exec.pictureUrl}"></div>
+            <hgroup>
+              <h6 class="exec-name"><strong>{{exec.name}}</strong></h6>
+              <span>{{exec.title}}</span>
+              <br/>
+            </hgroup>
+          </header>
+        </li>
+    </ul>
+  </section>
+</div>
