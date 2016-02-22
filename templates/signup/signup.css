@@ -1,0 +1,23 @@
+#mc_embed_signup {
+	border-style: solid;
+	border-radius: 25px; 
+	margin-left: 10px;
+	display: inline-block; 
+	border-color: white;
+}
+
+#join h3 {
+	margin-top: 0px;
+}
+
+.social-media-bottom {
+	padding-left: 50px;
+}
+
+.social-media-bottom img {
+	max-width: 130px;
+}
+
+input {
+	color: #666;
+}

@@ -122,4 +122,16 @@
     font-size: 22px;
   }
 
+  .social-media-bottom {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .social-media-bottom {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
 }
