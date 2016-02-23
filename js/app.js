@@ -4,7 +4,7 @@ csaapp.controller('navCtrl', ['$scope', '$location', function($scope, $location)
     $scope.location = $location.url();
 
     $(document).on( 'scroll', function(){
-        if ($(window).scrollTop() > 80) {
+        if ($(window).scrollTop() > 90) {
           $('.navbar').addClass('fixed');
         } else {
           $('.navbar').removeClass('fixed');
