@@ -1,12 +1,12 @@
 /* NAV */
 #topbanner {
-    height: 100px;
+    height: 80px;
     width: 100%;
     padding-bottom: 20px;
     padding-top: 15px;
     overflow: hidden;
-    background-image: url('../../images/navbanner2.jpg');
-    background-size: fit;
+    background-image: url('../../images/navbanner.png');
+    background-size: cover;
     background-position: center center;
 }
 
